@@ -6,14 +6,17 @@ namespace LastPass
     // TODO: Rename Group to Path since it reflects the actual meaning better.
     public class Account
     {
-        public Account(string id, string name, string username, string password, string url, string group)
+        public Account(string id, string name, string username, string password,
+            string url, string group, string notes, string favorite)
         {
             Id = id;
             Name = name;
             Username = username;
             Password = password;
             Url = url;
-            Group = group;
+            Group = group == "(none)" ? null : group;
+            Notes = notes;
+            Favorite = favorite;
         }
 
         public string Id { get; private set; }
@@ -22,5 +25,7 @@ namespace LastPass
         public string Password { get; private set; }
         public string Url { get; private set; }
         public string Group { get; private set; }
+        public string Notes { get; private set; }
+        public string Favorite { get; private set; }
     }
 }

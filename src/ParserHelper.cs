@@ -48,14 +48,15 @@ namespace LastPass
                     return null;
 
                 var notes = DecryptAes256Plain(ReadItem(reader), encryptionKey, placeholder);
-                2.Times(() => SkipItem(reader));
+                var favorite = ReadItem(reader).ToUtf8();
+                1.Times(() => SkipItem(reader));
                 var username = DecryptAes256Plain(ReadItem(reader), encryptionKey, placeholder);
                 var password = DecryptAes256Plain(ReadItem(reader), encryptionKey, placeholder);
                 2.Times(() => SkipItem(reader));
                 var secureNoteMarker = ReadItem(reader).ToUtf8();
 
                 // Parse secure note
-                if (secureNoteMarker == "1")
+                if (false && secureNoteMarker == "1")
                 {
                     var type = "";
                     ParseSecureNoteServer(notes, ref type, ref url, ref username, ref password);
@@ -68,7 +69,7 @@ namespace LastPass
                 // Adjust the path to include the group and the shared folder, if any.
                 var path = MakeAccountPath(group, folder);
 
-                return new Account(id, name, username, password, url, path);
+                return new Account(id, name, username, password, url, path, notes, favorite);
             });
         }
 
