@@ -13,3 +13,5 @@ lastpass-sharp.sln.DotSettings.user
 CLI/bin/
 CLI/obj/
 .vs/
+launchSettings.json
+*.csproj.user
