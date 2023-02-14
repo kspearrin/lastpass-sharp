@@ -12,6 +12,8 @@ lastpass-sharp.*.suo
 lastpass-sharp.sln.DotSettings.user
 CLI/bin/
 CLI/obj/
+LastPassImporter/bin/
+LastPassImporter/obj/
 .vs/
 launchSettings.json
 *.csproj.user

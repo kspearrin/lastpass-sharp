@@ -14,7 +14,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{D9C5F5
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example", "example\Example.csproj", "{AB9565EA-59BA-4569-9E7D-EA5C3EC525AA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CLI", "CLI\CLI.csproj", "{A598B5DB-B2FB-4600-952A-7DE01EE50CCB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CLI", "CLI\CLI.csproj", "{A598B5DB-B2FB-4600-952A-7DE01EE50CCB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LastPassImporter", "LastPassImporter\LastPassImporter.csproj", "{BFDFEFFA-8D56-4998-8204-7524B4FE7774}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -68,6 +70,24 @@ Global
 		{A598B5DB-B2FB-4600-952A-7DE01EE50CCB}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{A598B5DB-B2FB-4600-952A-7DE01EE50CCB}.Release|x86.ActiveCfg = Release|Any CPU
 		{A598B5DB-B2FB-4600-952A-7DE01EE50CCB}.Release|x86.Build.0 = Release|Any CPU
+		{BFDFEFFA-8D56-4998-8204-7524B4FE7774}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFDFEFFA-8D56-4998-8204-7524B4FE7774}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFDFEFFA-8D56-4998-8204-7524B4FE7774}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{BFDFEFFA-8D56-4998-8204-7524B4FE7774}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{BFDFEFFA-8D56-4998-8204-7524B4FE7774}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{BFDFEFFA-8D56-4998-8204-7524B4FE7774}.Debug|Mixed Platforms.Deploy.0 = Debug|Any CPU
+		{BFDFEFFA-8D56-4998-8204-7524B4FE7774}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BFDFEFFA-8D56-4998-8204-7524B4FE7774}.Debug|x86.Build.0 = Debug|Any CPU
+		{BFDFEFFA-8D56-4998-8204-7524B4FE7774}.Debug|x86.Deploy.0 = Debug|Any CPU
+		{BFDFEFFA-8D56-4998-8204-7524B4FE7774}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFDFEFFA-8D56-4998-8204-7524B4FE7774}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFDFEFFA-8D56-4998-8204-7524B4FE7774}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{BFDFEFFA-8D56-4998-8204-7524B4FE7774}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{BFDFEFFA-8D56-4998-8204-7524B4FE7774}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{BFDFEFFA-8D56-4998-8204-7524B4FE7774}.Release|Mixed Platforms.Deploy.0 = Release|Any CPU
+		{BFDFEFFA-8D56-4998-8204-7524B4FE7774}.Release|x86.ActiveCfg = Release|Any CPU
+		{BFDFEFFA-8D56-4998-8204-7524B4FE7774}.Release|x86.Build.0 = Release|Any CPU
+		{BFDFEFFA-8D56-4998-8204-7524B4FE7774}.Release|x86.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
